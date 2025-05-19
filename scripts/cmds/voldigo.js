@@ -2,7 +2,7 @@ const axios = require('axios');
 
 module.exports = {
   config: {
-    name: "voldigo",
+    name: "Haruki",
     version: 2.0,
     author: "OtinXSandip",
     description: "ai",
@@ -35,11 +35,11 @@ module.exports = {
       const res = await axios.get(`https://sandipbaruwal.onrender.com/gemini?prompt=${encodedPrompt}`);
       const result = res.data.answer;
       
-      api.setMessageReaction("🔴", event.messageID, () => { }, true);
+      api.setMessageReaction("🌊", event.messageID, () => { }, true);
       message.reply({
-        body: `ROI DEMON ✧════•❁❀❁•════✧
+        body: `CHAT SOMA ✧════•❁❀❁•════✧
 ${name} ${result}
-✧════•❁❀❁•════✧ VOLDIGO ANOS 🔴`,
+✧════•❁❀❁•════✧ HARUKI KUN 🌊`,
         mentions: ment,
       }, (err, info) => {
         global.GoatBot.onReply.set(info.messageID, {
@@ -65,12 +65,12 @@ ${name} ${result}
       const res = await axios.get(`https://sandipbaruwal.onrender.com/gemini?prompt=${encodedPrompt}`);
       const result = res.data.answer;
      
-      api.setMessageReaction("🔴", event.messageID, () => { }, true);
+      api.setMessageReaction("🌊", event.messageID, () => { }, true);
       message.reply({
-        body: `VOLDIGO ANOS 🍀 ✧════•❁❀❁•════✧
+        body: `CHAT SOMA 🍀 ✧════•❁❀❁•════✧
 ${name}  
 ${result}
-✧════•❁❀❁•════✧ VOLDIGO ANOS 🔴`,
+✧════•❁❀❁•════✧ HARUKI KUN 🌊`,
         mentions: ment,
       }, (err, info) => {
         global.GoatBot.onReply.set(info.messageID, {
